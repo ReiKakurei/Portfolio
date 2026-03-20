@@ -3,49 +3,25 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Majaro Muhammad — Developer Portfolio</title>
+<title>Majaro Muhammad - Developer Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
 <style>
-:root {
-  --bg: #0d0d0f;
-  --bg2: #141418;
-  --bg3: #1c1c22;
-  --border: rgba(255,255,255,0.07);
-  --text: #f0ede8;
-  --muted: #888;
-  --accent: #7c6dfa;
-  --accent2: #c084fc;
-  --card-bg: #16161b;
-}
-[data-theme="light"] {
-  --bg: #f5f4f0;
-  --bg2: #eceae4;
-  --bg3: #ffffff;
-  --border: rgba(0,0,0,0.08);
-  --text: #1a1a1a;
-  --muted: #666;
-  --accent: #5b47f5;
-  --accent2: #9333ea;
-  --card-bg: #ffffff;
-}
+:root{--bg:#0d0d0f;--bg2:#141418;--bg3:#1c1c22;--border:rgba(255,255,255,0.07);--text:#f0ede8;--muted:#888;--accent:#7c6dfa;--accent2:#c084fc;--card-bg:#16161b}
+[data-theme="light"]{--bg:#f5f4f0;--bg2:#eceae4;--bg3:#ffffff;--border:rgba(0,0,0,0.08);--text:#1a1a1a;--muted:#666;--accent:#5b47f5;--accent2:#9333ea;--card-bg:#ffffff}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:16px}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;overflow-x:hidden;transition:background .3s,color .3s}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(14px);background:rgba(13,13,15,0.7);border-bottom:1px solid var(--border);transition:background .3s}
 [data-theme="light"] nav{background:rgba(245,244,240,0.8)}
 .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-0.02em;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s;letter-spacing:0.01em}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--text)}
 .theme-btn{background:var(--bg3);border:1px solid var(--border);color:var(--text);cursor:pointer;width:38px;height:38px;border-radius:50%;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .theme-btn:hover{border-color:var(--accent)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
-
-/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:8rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(124,109,250,0.15),transparent);pointer-events:none}
 .hero-content{position:relative;max-width:700px}
@@ -62,14 +38,10 @@ h1 .name{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit
 .scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:var(--muted);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;animation:bounce 2s infinite}
 .scroll-hint::after{content:'';display:block;width:1px;height:40px;background:linear-gradient(to bottom,var(--muted),transparent)}
 @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-8px)}}
-
-/* SECTIONS */
 section{padding:6rem 2rem;max-width:1100px;margin:0 auto}
 .section-label{font-size:.8rem;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
 h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spacing:-0.03em;margin-bottom:1rem}
 .divider{height:1px;background:var(--border);max-width:1100px;margin:0 auto}
-
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
 .about-text p{color:var(--muted);margin-bottom:1rem;font-size:1.05rem}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
@@ -78,25 +50,19 @@ h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:
 .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-label{font-size:.85rem;color:var(--muted);margin-top:.2rem}
 .about-image{display:flex;align-items:center;justify-content:center}
-.avatar-box{width:280px;height:280px;border-radius:24px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:5rem;font-weight:800;background:linear-gradient(135deg,rgba(124,109,250,0.15),rgba(192,132,252,0.1));position:relative;overflow:hidden}
-.avatar-box::before{content:'';position:absolute;inset:-1px;border-radius:25px;background:linear-gradient(135deg,var(--accent),var(--accent2));z-index:-1;opacity:.3}
-
-/* SKILLS */
+.avatar-box{width:280px;height:280px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:5rem;font-weight:800;background:linear-gradient(135deg,rgba(124,109,250,0.15),rgba(192,132,252,0.1));border:1px solid var(--border)}
 #skills{background:var(--bg2);max-width:100%;padding:6rem 2rem}
 .skills-inner{max-width:1100px;margin:0 auto}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
 .skill-cat{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:1.5rem;transition:all .25s}
 .skill-cat:hover{border-color:var(--accent);transform:translateY(-4px)}
-.skill-cat-title{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.skill-cat-icon{font-size:1.2rem}
+.skill-cat-title{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
 .skill-tag{font-size:.8rem;font-weight:500;padding:.3rem .7rem;border-radius:6px;background:rgba(124,109,250,0.1);color:var(--accent);border:1px solid rgba(124,109,250,0.2)}
-
-/* PROJECTS */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-top:3rem}
-.project-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:all .3s;cursor:pointer;position:relative}
+.project-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:all .3s;cursor:pointer}
 .project-card:hover{border-color:var(--accent);transform:translateY(-6px);box-shadow:0 20px 40px rgba(124,109,250,0.12)}
-.card-banner{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
+.card-banner{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
 .card-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--card-bg));pointer-events:none}
 .banner-1{background:linear-gradient(135deg,#1a1030,#2d1b69)}
 .banner-2{background:linear-gradient(135deg,#0d2818,#0f5132)}
@@ -110,8 +76,6 @@ h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:
 .card-links{display:flex;gap:.75rem}
 .card-link{font-size:.82rem;font-weight:500;color:var(--accent);text-decoration:none;padding:.35rem .85rem;border:1px solid rgba(124,109,250,0.25);border-radius:6px;transition:all .2s}
 .card-link:hover{background:rgba(124,109,250,0.1)}
-
-/* EDUCATION */
 .edu-timeline{margin-top:3rem;position:relative;padding-left:2rem}
 .edu-timeline::before{content:'';position:absolute;left:0;top:.5rem;bottom:0;width:1px;background:var(--border)}
 .edu-item{position:relative;margin-bottom:2.5rem;padding-left:1.5rem}
@@ -120,48 +84,25 @@ h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:
 .edu-degree{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:.2rem}
 .edu-school{font-size:.9rem;color:var(--muted)}
 .edu-note{font-size:.85rem;color:var(--muted);margin-top:.5rem}
-
-/* CONTACT */
 #contact{background:var(--bg2);max-width:100%;padding:6rem 2rem}
 .contact-inner{max-width:1100px;margin:0 auto;text-align:center}
-.contact-inner h2{margin-bottom:1rem}
 .contact-sub{color:var(--muted);max-width:500px;margin:0 auto 3rem;font-size:1.05rem}
 .contact-links{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
 .contact-card{display:flex;align-items:center;gap:.75rem;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1rem 1.5rem;text-decoration:none;color:var(--text);font-weight:500;font-size:.95rem;transition:all .25s}
 .contact-card:hover{border-color:var(--accent);transform:translateY(-3px)}
-.contact-icon{font-size:1.3rem}
-
-/* FOOTER */
 footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}
-
-/* MOBILE NAV */
 .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:700;color:var(--text);text-decoration:none;transition:color .2s}
 .mobile-menu a:hover{color:var(--accent)}
-
-/* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .about-grid{grid-template-columns:1fr;gap:2rem}
-  .about-image{order:-1}
-  .avatar-box{width:180px;height:180px;font-size:3.5rem}
-  .hero-tag{font-size:.7rem}
-}
-@media(max-width:480px){
-  section{padding:4rem 1.25rem}
-  .stat-card{padding:1rem}
-}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.about-grid{grid-template-columns:1fr;gap:2rem}.about-image{order:-1}.avatar-box{width:180px;height:180px;font-size:3.5rem}}
+@media(max-width:480px){section{padding:4rem 1.25rem}.stat-card{padding:1rem}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <span class="logo">MA.</span>
   <ul class="nav-links">
@@ -170,31 +111,27 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li>
-      <button class="theme-btn" id="themeBtn" title="Toggle theme">🌙</button>
-    </li>
+    <li><button class="theme-btn" id="themeBtn" title="Toggle theme">&#127769;</button></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" class="mob-link">About</a>
   <a href="#skills" class="mob-link">Skills</a>
   <a href="#projects" class="mob-link">Projects</a>
   <a href="#education" class="mob-link">Education</a>
   <a href="#contact" class="mob-link">Contact</a>
-  <button class="theme-btn" id="themeBtnMob" style="margin-top:1rem">🌙</button>
+  <button class="theme-btn" id="themeBtnMob" style="margin-top:1rem">&#127769;</button>
 </div>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-tag">👋 Available for opportunities</div>
-    <h1>Hi, I'm <span class="name">Majaro Muhammad</span><br/>CS Student & Developer.</h1>
+    <div class="hero-tag">Available for opportunities</div>
+    <h1>Hi, I'm <span class="name">Majaro Muhammad</span><br/>CS Student &amp; Developer.</h1>
     <p class="hero-sub">A passionate Computer Science student at the University of Lagos, building clean and efficient software solutions.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -206,31 +143,18 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <div class="divider"></div>
 
-<!-- ABOUT -->
 <section id="about">
   <p class="section-label reveal">About Me</p>
-  <h2 class="reveal">Turning caffeine into code ☕</h2>
+  <h2 class="reveal">Turning caffeine into code</h2>
   <div class="about-grid">
     <div class="about-text reveal">
       <p>I'm Majaro Muhammad Ayinde, a Computer Science student at the University of Lagos with a passion for building software that solves real problems. From frontend interfaces to numerical algorithms, I enjoy working across the stack.</p>
-      <p>When I'm not coding, I'm probably exploring new CS concepts, working on side projects, or writing fiction (yes, both).</p>
+      <p>When I'm not coding, I'm probably exploring new CS concepts, working on side projects, or writing fiction.</p>
       <div class="about-stats">
-        <div class="stat-card">
-          <div class="stat-num">2+</div>
-          <div class="stat-label">Years Coding</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Projects Built</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">5+</div>
-          <div class="stat-label">Technologies</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">∞</div>
-          <div class="stat-label">Curiosity</div>
-        </div>
+        <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Years Coding</div></div>
+        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Technologies</div></div>
+        <div class="stat-card"><div class="stat-num">&#8734;</div><div class="stat-label">Curiosity</div></div>
       </div>
     </div>
     <div class="about-image reveal">
@@ -241,50 +165,33 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <div class="divider"></div>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="skills-inner">
     <p class="section-label reveal">What I Know</p>
-    <h2 class="reveal">Skills & Technologies</h2>
+    <h2 class="reveal">Skills &amp; Technologies</h2>
     <div class="skills-grid">
       <div class="skill-cat reveal">
-        <div class="skill-cat-title"><span class="skill-cat-icon">🌐</span> Frontend</div>
+        <div class="skill-cat-title">Frontend</div>
         <div class="skill-tags">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Responsive Design</span>
         </div>
       </div>
       <div class="skill-cat reveal">
-        <div class="skill-cat-title"><span class="skill-cat-icon">⚙️</span> Backend</div>
+        <div class="skill-cat-title">Backend</div>
         <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Flask</span>
-          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Python</span><span class="skill-tag">Node.js</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Flask</span><span class="skill-tag">SQL</span>
         </div>
       </div>
       <div class="skill-cat reveal">
-        <div class="skill-cat-title"><span class="skill-cat-icon">🔢</span> Computational</div>
+        <div class="skill-cat-title">Computational</div>
         <div class="skill-tags">
-          <span class="skill-tag">Numerical Methods</span>
-          <span class="skill-tag">Algorithm Design</span>
-          <span class="skill-tag">Data Structures</span>
-          <span class="skill-tag">Boolean Algebra</span>
+          <span class="skill-tag">Numerical Methods</span><span class="skill-tag">Algorithm Design</span><span class="skill-tag">Data Structures</span><span class="skill-tag">Boolean Algebra</span>
         </div>
       </div>
       <div class="skill-cat reveal">
-        <div class="skill-cat-title"><span class="skill-cat-icon">🛠</span> Tools & Workflow</div>
+        <div class="skill-cat-title">Tools &amp; Workflow</div>
         <div class="skill-tags">
-          <span class="skill-tag">Git & GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Linux</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">Agile/Scrum</span>
+          <span class="skill-tag">Git &amp; GitHub</span><span class="skill-tag">VS Code</span><span class="skill-tag">Linux</span><span class="skill-tag">Figma</span><span class="skill-tag">Agile/Scrum</span>
         </div>
       </div>
     </div>
@@ -293,73 +200,44 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <div class="divider"></div>
 
-<!-- PROJECTS -->
 <section id="projects">
   <p class="section-label reveal">What I've Built</p>
   <h2 class="reveal">Featured Projects</h2>
   <div class="projects-grid">
     <div class="project-card reveal">
-      <div class="card-banner banner-1">🧮</div>
+      <div class="card-banner banner-1">&#129518;</div>
       <div class="card-body">
         <div class="card-title">Numerical Methods Toolkit</div>
-        <div class="card-desc">Interactive Python tool implementing Bisection, Newton-Raphson, Secant methods, ODE solvers, and LU decomposition with visualizations.</div>
-        <div class="card-techs">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Matplotlib</span>
-        </div>
-        <div class="card-links">
-          <a href="#" class="card-link">Live Demo</a>
-          <a href="#" class="card-link">GitHub</a>
-        </div>
+        <div class="card-desc">Python tool implementing Bisection, Newton-Raphson, Secant methods, ODE solvers, and LU decomposition with visualizations.</div>
+        <div class="card-techs"><span class="tech-badge">Python</span><span class="tech-badge">NumPy</span><span class="tech-badge">Matplotlib</span></div>
+        <div class="card-links"><a href="#" class="card-link">Live Demo</a><a href="#" class="card-link">GitHub</a></div>
       </div>
     </div>
     <div class="project-card reveal">
-      <div class="card-banner banner-2">🌱</div>
+      <div class="card-banner banner-2">&#127807;</div>
       <div class="card-body">
         <div class="card-title">Task Manager App</div>
-        <div class="card-desc">Full-stack task management application with user auth, CRUD operations, and a responsive React frontend built with component-based architecture.</div>
-        <div class="card-techs">
-          <span class="tech-badge">React</span>
-          <span class="tech-badge">Node.js</span>
-          <span class="tech-badge">MongoDB</span>
-        </div>
-        <div class="card-links">
-          <a href="#" class="card-link">Live Demo</a>
-          <a href="#" class="card-link">GitHub</a>
-        </div>
+        <div class="card-desc">Full-stack task management app with user auth, CRUD operations, and a responsive React frontend with component-based architecture.</div>
+        <div class="card-techs"><span class="tech-badge">React</span><span class="tech-badge">Node.js</span><span class="tech-badge">MongoDB</span></div>
+        <div class="card-links"><a href="#" class="card-link">Live Demo</a><a href="#" class="card-link">GitHub</a></div>
       </div>
     </div>
     <div class="project-card reveal">
-      <div class="card-banner banner-3">⚡</div>
+      <div class="card-banner banner-3">&#9889;</div>
       <div class="card-body">
         <div class="card-title">Boolean Algebra Minimizer</div>
-        <div class="card-desc">A Karnaugh map solver and SOP/POS minimizer tool built in Python, supporting 3- and 4-variable expressions with step-by-step output.</div>
-        <div class="card-techs">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Logic Design</span>
-          <span class="tech-badge">CLI</span>
-        </div>
-        <div class="card-links">
-          <a href="#" class="card-link">Live Demo</a>
-          <a href="#" class="card-link">GitHub</a>
-        </div>
+        <div class="card-desc">A Karnaugh map solver and SOP/POS minimizer built in Python, supporting 3 and 4-variable expressions with step-by-step output.</div>
+        <div class="card-techs"><span class="tech-badge">Python</span><span class="tech-badge">Logic Design</span><span class="tech-badge">CLI</span></div>
+        <div class="card-links"><a href="#" class="card-link">Live Demo</a><a href="#" class="card-link">GitHub</a></div>
       </div>
     </div>
     <div class="project-card reveal">
-      <div class="card-banner banner-4">🌐</div>
+      <div class="card-banner banner-4">&#127760;</div>
       <div class="card-body">
         <div class="card-title">Personal Portfolio</div>
-        <div class="card-desc">This portfolio! Designed from scratch with dark/light mode, smooth scrolling, scroll-triggered animations, and fully responsive layout.</div>
-        <div class="card-techs">
-          <span class="tech-badge">HTML</span>
-          <span class="tech-badge">CSS</span>
-          <span class="tech-badge">JavaScript</span>
-        </div>
-        <div class="card-links">
-          <a href="#" class="card-link">Live Demo</a>
-          <a href="#" class="card-link">GitHub</a>
-        </div>
+        <div class="card-desc">This portfolio! Built from scratch with dark/light mode, smooth scrolling, scroll-triggered animations, and fully responsive layout.</div>
+        <div class="card-techs"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span></div>
+        <div class="card-links"><a href="https://reikakurei.github.io/Portfolio" class="card-link">Live Demo</a><a href="https://github.com/ReiKakurei/Portfolio" class="card-link">GitHub</a></div>
       </div>
     </div>
   </div>
@@ -367,13 +245,12 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <div class="divider"></div>
 
-<!-- EDUCATION -->
 <section id="education">
   <p class="section-label reveal">Background</p>
   <h2 class="reveal">Education</h2>
   <div class="edu-timeline">
     <div class="edu-item reveal">
-      <div class="edu-date">2024 — Present</div>
+      <div class="edu-date">2024 - Present</div>
       <div class="edu-degree">B.Sc. Computer Science</div>
       <div class="edu-school">University of Lagos, Nigeria</div>
       <div class="edu-note">Coursework: Software Engineering · Computational Methods · Digital Logic · Engineering Mathematics · Data Structures</div>
@@ -382,71 +259,68 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
       <div class="edu-date">Before 2024</div>
       <div class="edu-degree">Secondary School Certificate</div>
       <div class="edu-school">Nigeria</div>
-      <div class="edu-note">Sciences track — Mathematics, Physics, Computer Studies</div>
+      <div class="edu-note">Sciences track - Mathematics, Physics, Computer Studies</div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
     <p class="section-label reveal">Say Hello</p>
     <h2 class="reveal">Let's Work Together</h2>
     <p class="contact-sub reveal">I'm open to internships, freelance projects, or just a good tech conversation. Reach out anytime.</p>
     <div class="contact-links reveal">
-      <a href="mailto:majaromuhammad@gmail.com" class="contact-card">
-        <span class="contact-icon">📧</span> majaromuhammad@gmail.com
-      </a>
-      <a href="https://github.com/ReiKakurei" class="contact-card" target="_blank">
-        <span class="contact-icon">🐙</span> github.com/ReiKakurei
-      </a>
-      <a href="https://www.linkedin.com/in/majaro-muhammad-131b5a3b8" class="contact-card" target="_blank">
-        <span class="contact-icon">💼</span> LinkedIn
-      </a>
-      <a href="#" class="contact-card">
-        <span class="contact-icon">📄</span> Download CV
-      </a>
+      <a href="mailto:majaromuhammad@gmail.com" class="contact-card">&#128231; majaromuhammad@gmail.com</a>
+      <a href="https://github.com/ReiKakurei" class="contact-card" target="_blank">&#128025; github.com/ReiKakurei</a>
+      <a href="https://www.linkedin.com/in/majaro-muhammad-131b5a3b8" class="contact-card" target="_blank">&#128188; LinkedIn</a>
+      <a href="#" class="contact-card">&#128196; Download CV</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Designed & Built by <strong>Majaro Muhammad Ayinde</strong> · 2025</p>
+  <p>Designed &amp; Built by <strong>Majaro Muhammad Ayinde</strong> &middot; 2025</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const html = document.documentElement;
-const themeBtn = document.getElementById('themeBtn');
-const themeBtnMob = document.getElementById('themeBtnMob');
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
+<script>
+var html=document.documentElement;
+var themeBtn=document.getElementById('themeBtn');
+var themeBtnMob=document.getElementById('themeBtnMob');
+var hamburger=document.getElementById('hamburger');
+var mobileMenu=document.getElementById('mobileMenu');
 
 function setTheme(t){
   html.setAttribute('data-theme',t);
   localStorage.setItem('theme',t);
-  const icon = t==='dark'?'🌙':'☀️';
-  themeBtn.textContent=icon;
-  themeBtnMob.textContent=icon;
+  var icon=t==='dark'?'Moon':'Sun';
+  themeBtn.textContent=t==='dark'?'\u{1F319}':'\u2600\uFE0F';
+  themeBtnMob.textContent=t==='dark'?'\u{1F319}':'\u2600\uFE0F';
 }
 
-const saved = localStorage.getItem('theme')||'dark';
+var saved=localStorage.getItem('theme')||'dark';
 setTheme(saved);
 
-themeBtn.addEventListener('click',()=>setTheme(html.getAttribute('data-theme')==='dark'?'light':'dark'));
-themeBtnMob.addEventListener('click',()=>setTheme(html.getAttribute('data-theme')==='dark'?'light':'dark'));
+themeBtn.addEventListener('click',function(){setTheme(html.getAttribute('data-theme')==='dark'?'light':'dark')});
+themeBtnMob.addEventListener('click',function(){setTheme(html.getAttribute('data-theme')==='dark'?'light':'dark')});
 
-hamburger.addEventListener('click',()=>{
+hamburger.addEventListener('click',function(){
   mobileMenu.classList.toggle('open');
   document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';
 });
 
-document.querySelectorAll('.mob-link').forEach(l=>{
-  l.addEventListener('click',()=>{
+document.querySelectorAll('.mob-link').forEach(function(l){
+  l.addEventListener('click',function(){
     mobileMenu.classList.remove('open');
     document.body.style.overflow='';
   });
 });
 
-const observer = new IntersectionObserver((entries)=>
+var observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el)});
+</script>
+</body>
+</html>
