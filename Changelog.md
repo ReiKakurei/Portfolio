@@ -1,0 +1,1 @@
+Sept 1, 2026: Actually linked pages to demos of projects previously built (Numerical Methods Toolkit, Task Manager App)
