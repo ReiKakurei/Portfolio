@@ -56,3 +56,16 @@ li a:hover {
     border-color: var(--accent);
     transform: translateY(-2px);
 }
+
+.page-header {
+    background: linear-gradient(135deg, #0d2818, #0f5132);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.page-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
