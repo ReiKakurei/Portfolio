@@ -5,22 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numerical Methods Toolkit</title>
     <link rel="stylesheet" href="styles.css">
-    <div class="page-header">
-    <div class="page-icon">&#129518;</div>
-    <h1>Numerical Methods Toolkit</h1>
-    <p>Bisection and ODE solvers with Matplotlib visualizations</p>
-</div>
 </head>
 <body>
-    <h1>Numerical Methods Toolkit</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="themeBtn" class="theme-btn">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-icon">&#129518;</div>
+        <h1>Numerical Methods Toolkit</h1>
+        <p>Bisection and ODE solvers with Matplotlib visualizations</p>
+    </div>
+
     <p>Welcome to the Numerical Methods Toolkit! This toolkit provides a collection of numerical methods and algorithms for solving mathematical problems. Explore the various methods and learn how to implement them in your own projects.</p>
-    <ul>
-        <li><a href="bisection_method.html">Bisection Method</a></li>
-        <li><a href="newton_raphson.html">Newton-Raphson Method</a></li>
-        <li><a href="gauss_elimination.html">Gauss Elimination</a></li>
-        <li><a href="trapezoidal_rule.html">Trapezoidal Rule</a></li>
-        <li><a href="simpsons_rule.html">Simpson's Rule</a></li>
-    </ul>
+    <div class="container">
+        <div class="method-card">
+            <h2>Bisection Method</h2>
+            <p>The Bisection Method is a root-finding method that repeatedly bisects an interval and then selects a subinterval in which a root must lie for further processing.</p>
+            <a href="bisection_method.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>ODE Solvers</h2>
+            <p>ODE solvers are algorithms for solving ordinary differential equations. This toolkit includes various methods for solving ODEs, including Euler's method and Runge-Kutta methods.</p>
+            <a href="ode.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Matplotlib Visualizations</h2>
+            <p>Visualize the results of numerical methods using Matplotlib. This toolkit provides examples of how to create plots and graphs to better understand the behavior of numerical algorithms.</p>
+            <a href="visualizations.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Newton-Raphson Method</h2>
+            <p>The Newton-Raphson Method is an iterative root-finding algorithm that uses the derivative of a function to find its roots. It converges quickly for well-behaved functions.</p>
+            <a href="newton_raphson.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Secant Method</h2>
+            <p>The Secant Method is a root-finding algorithm that uses a sequence of secant lines to approximate the root of a function. It is similar to the Newton-Raphson method but does not require the computation of derivatives.</p>
+            <a href="secant.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Trapezoidal Rule</h2>
+            <p>The Trapezoidal Rule is a numerical integration method that approximates the area under a curve by dividing it into trapezoids. It is a simple and effective method for estimating definite integrals.</p>
+            <a href="trapezoidal_rule.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Simpson's Rule</h2>
+            <p>Simpson's Rule is a numerical integration method that approximates the area under a curve using parabolic segments. It provides a more accurate estimate of definite integrals compared to the Trapezoidal Rule.</p>
+            <a href="simpsons_rule.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Linear Regression</h2>
+            <p>Linear Regression is a statistical method for modeling the relationship between a dependent variable and one or more independent variables. It is used to predict the value of the dependent variable based on the values of the independent variables.</p>
+            <a href="linear-regression.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>LU Decomposition</h2>
+            <p>LU Decomposition is a matrix factorization method that decomposes a matrix into the product of a lower triangular matrix and an upper triangular matrix. It is used to solve systems of linear equations and compute determinants.</p>
+            <a href="lu-decomposition.html" class="btn">Learn More</a>
+        </div>
+        <div class="method-card">
+            <h2>Gaussian Elimination</h2>
+            <p>Gaussian Elimination is a method for solving systems of linear equations by transforming the coefficient matrix into row echelon form. It is a fundamental algorithm in numerical linear algebra.</p>
+            <a href="gauss-elimination.html" class="btn">Learn More</a>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
