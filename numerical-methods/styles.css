@@ -149,3 +149,115 @@ nav ul li a:hover {
     background: var(--accent2);
     transform: translateY(-2px);
 }
+
+/* --- Method page layout --- */
+.method-page {
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+/* --- Labels and inputs --- */
+.method-page label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: .4rem;
+    margin-top: 1.2rem;
+}
+
+.method-page label:first-of-type {
+    margin-top: 0;
+}
+
+.method-page input[type="text"] {
+    width: 100%;
+    padding: .7rem .9rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: .95rem;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.method-page input[type="text"]:focus {
+    border-color: var(--accent);
+}
+
+.input-error {
+    border-color: #ff4d4d !important;
+}
+
+.hint {
+    font-size: .8rem;
+    color: var(--muted);
+    margin: .4rem 0 0;
+}
+
+/* --- Math preview box --- */
+.math-preview {
+    min-height: 2rem;
+    margin: .6rem 0 0;
+    padding: .5rem .2rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+/* --- Calculate button spacing --- */
+.method-page .btn {
+    margin-top: 1.8rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* --- Results area --- */
+#results {
+    margin-top: 2rem;
+}
+
+#results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+#results th,
+#results td {
+    padding: .6rem .8rem;
+    text-align: center;
+    font-size: .85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+#results th {
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .04em;
+}
+
+#results td {
+    color: var(--text);
+}
+
+#results strong {
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: .9rem;
+    font-weight: 500;
+}
