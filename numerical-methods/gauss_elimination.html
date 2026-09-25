@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaussian Elimination — Numerical Methods Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="themeBtn" class="theme-btn">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-icon">🧮</div>
+        <h1>Gaussian Elimination</h1>
+        <p>Solving systems of linear equations by row reduction</p>
+    </div>
+
+    <div class="method-page">
+        <label for="sizeSelect">Number of equations/unknowns</label>
+        <select id="sizeSelect">
+            <option value="2">2 x 2</option>
+            <option value="3" selected>3 x 3</option>
+            <option value="4">4 x 4</option>
+        </select>
+
+        <div id="matrixGrid"></div>
+
+        <button id="calcBtn" class="btn">Calculate</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gauss_elimination.js"></script>
+</body>
+</html>

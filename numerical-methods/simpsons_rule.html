@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpson's Rule — Numerical Methods Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="themeBtn" class="theme-btn">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-icon">📐</div>
+        <h1>Simpson's Rule</h1>
+        <p>Approximating definite integrals using parabolic segments</p>
+    </div>
+
+    <div class="method-page">
+        <label for="funcInput">f(x) =</label>
+        <input type="text" id="funcInput" placeholder="e.g. x^2 - 4">
+        <div id="funcPreview" class="math-preview"></div>
+        <p class="hint">Use ^ for powers, e.g. x^2 - 4 for x² − 4</p>
+
+        <label for="aInput">a (lower limit)</label>
+        <input type="text" id="aInput" placeholder="e.g. 0">
+
+        <label for="bInput">b (upper limit)</label>
+        <input type="text" id="bInput" placeholder="e.g. 4">
+
+        <label for="nInput">n (subintervals, must be even)</label>
+        <input type="text" id="nInput" placeholder="e.g. 4">
+
+        <button id="calcBtn" class="btn">Calculate</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="simpsons_rule.js"></script>
+</body>
+</html>

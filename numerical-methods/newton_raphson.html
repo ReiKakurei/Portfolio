@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton-Raphson Method — Numerical Methods Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="themeBtn" class="theme-btn">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-icon">📉</div>
+        <h1>Newton-Raphson Method</h1>
+        <p>Root-finding using slope-based approximation</p>
+    </div>
+
+    <div class="method-page">
+        <label for="funcInput">f(x) =</label>
+        <input type="text" id="funcInput" placeholder="e.g. x^2 - 4">
+        <div id="funcPreview" class="math-preview"></div>
+        <p class="hint">Use ^ for powers, e.g. x^2 - 4 for x² − 4</p>
+
+        <label for="x0Input">x₀ (initial guess)</label>
+        <input type="text" id="x0Input" placeholder="e.g. 1">
+
+        <button id="calcBtn" class="btn">Calculate</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="newton_raphson.js"></script>
+</body>
+</html>

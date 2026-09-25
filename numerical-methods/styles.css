@@ -261,3 +261,82 @@ nav ul li a:hover {
     font-size: .9rem;
     font-weight: 500;
 }
+
+/* --- Dropdown for matrix size --- */
+.method-page select {
+    width: 100%;
+    padding: .7rem .9rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: .95rem;
+    margin-top: .4rem;
+}
+
+/* --- Matrix input grid --- */
+.matrix-table {
+    margin: 1.5rem auto 0;
+    border-collapse: separate;
+    border-spacing: .5rem;
+}
+
+.matrix-input {
+    width: 3.5rem;
+    padding: .6rem;
+    text-align: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: .95rem;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.matrix-input:focus {
+    border-color: var(--accent);
+}
+
+.eq-sign {
+    color: var(--muted);
+    font-weight: 600;
+    padding: 0 .3rem;
+}
+
+/* --- Step-by-step elimination tables --- */
+.step-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .5rem 0 1.5rem;
+}
+
+.step-table td {
+    padding: .5rem;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+}
+
+/* --- Final solution list --- */
+.solution-list {
+    list-style: none;
+    padding: 0;
+    margin: .5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.solution-list li {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: .7rem 1rem;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
